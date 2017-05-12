@@ -1,0 +1,17 @@
+inherit gnome2
+
+NAME="girl"
+VERSION=10.0.0
+RELEASE=1
+CATEGORY="Audio Net"
+SUMMARY="GNOME Internet Radio Locator"
+DESCRIPTION="GNOME Internet Radio Locator (GIRL) is a program that allows
+the user to easily locate live radio programs by broadcasters on the Internet.
+GIRL is developed on the GNOME platform and it requires gstreamer for
+playback. Enjoy Internet Radio."
+
+DIFF_EXCLUDES="Makefile"
+
+REQUIRES="gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad-free"
+
+CYGCONF_ARGS="--with-recording"
